@@ -2,7 +2,9 @@
 *.jl.*.cov
 *.jl.mem
 *play.jl
-assets/*
+assets/katex.min.css
+assets/katex.min.js
+assets/auto-render.min.js
 docs/build/
 docs/site/
 docs/src/tutorial.md
