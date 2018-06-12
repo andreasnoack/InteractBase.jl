@@ -4,6 +4,8 @@ module InteractBase
 
 using WebIO, Vue, DataStructures, Observables, CSSUtil, Colors, Requires
 
+import UIRecipesBase: layout, AbstractUI
+
 export filepicker, datepicker, timepicker, colorpicker, spinbox
 
 export autocomplete, input, dropdown, checkbox, textbox, textarea, button, slider, toggle, togglecontent
