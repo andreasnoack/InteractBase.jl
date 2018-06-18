@@ -313,7 +313,7 @@ function slider(::WidgetTheme, vals::Range; class=nothing,
     ui = input(value; displayfunction=displayfunction,
         typ="range", min=minimum(vals), max=maximum(vals), step=step(vals), className=className, kwargs...)
     if (label != nothing) || showvalue
-        scope(ui).dom = showvalue ?  flex_row(wdglabel(label), scope(ui).dom, dom"div"("{{displayedvalue}}")):
+        scope(ui).dom = showvalue ?  flex_row(wdglabel(label), scope(ui).dom, dom"div"("{{displayedvalue}}")) :
                                      flex_row(wdglabel(label), scope(ui).dom)
     end
     Widget{:slider}(ui)
